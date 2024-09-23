@@ -1,20 +1,28 @@
 package SplitWise;
 
 public class Balance {
-    private Double balanceAmount = 0.0;
-    private User user;
+    private User user;  // The user for whom this balance is recorded (either creditor or debtor)
+    private Double owe = 0.0;  // How much the current user owes this other user
+    private Double owed = 0.0; // How much this user is owed by the other user
 
-    Balance(Double balanceAmount, User user) {
-        this.balanceAmount = balanceAmount;
+    public Balance(User user) {
         this.user = user;
     }
 
-    public Double getBalanceAmount() {
-        return balanceAmount;
+    public Double getOwe() {
+        return owe;
     }
 
-    public void setBalanceAmount(Double balanceAmount) {
-        this.balanceAmount = balanceAmount;
+    public void setOwe(Double owe) {
+        this.owe = owe;
+    }
+
+    public Double getOwed() {
+        return owed;
+    }
+
+    public void setOwed(Double owed) {
+        this.owed = owed;
     }
 
     public User getUser() {

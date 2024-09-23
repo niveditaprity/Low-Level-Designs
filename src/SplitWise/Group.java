@@ -9,47 +9,15 @@ public class Group {
     private String groupName;
     private List<User> groupUsers;
     private List<Expense> expenseList;
-    private User creadtedBy;
+    private User createdBy;
 
-    public Group(int groupId, String groupName, User creadtedBy) {
+    public Group(int groupId, String groupName, User createdBy) {
         this.groupId = groupId;
         this.groupName = groupName;
-        groupUsers = new ArrayList<>();
-        expenseList = new ArrayList<>();
-        this.creadtedBy = creadtedBy;
-        groupUsers.add(creadtedBy);
-    }
-
-    public int getGroupId() {
-        return groupId;
-    }
-
-    public void setGroupId(int groupId) {
-        this.groupId = groupId;
-    }
-
-    public String getGroupName() {
-        return groupName;
-    }
-
-    public void setGroupName(String groupName) {
-        this.groupName = groupName;
-    }
-
-    public List<User> getGroupUsers() {
-        return groupUsers;
-    }
-
-    public void setGroupUsers(List<User> groupUsers) {
-        this.groupUsers = groupUsers;
-    }
-
-    public List<Expense> getExpenseList() {
-        return expenseList;
-    }
-
-    public void setExpenseList(List<Expense> expenseList) {
-        this.expenseList = expenseList;
+        this.groupUsers = new ArrayList<>();
+        this.expenseList = new ArrayList<>();
+        this.createdBy = createdBy;
+        this.groupUsers.add(createdBy);
     }
 
     public void addUserToGroup(User user) {
@@ -57,8 +25,7 @@ public class Group {
             System.out.println("User : " + user.getUserName() + " is getting added to group");
             groupUsers.add(user);
         } else {
-            System.out.println("User : " + user.getUserName() + "is already in group");
-
+            System.out.println("User : " + user.getUserName() + " is already in group");
         }
     }
 
@@ -69,47 +36,34 @@ public class Group {
             for (User user : groupUsers) {
                 Split split = new Split(splitId++, splitAmount, user);
                 if (user != paidBy) {
-                    System.out.println("Adding Balance to user : " + user.getUserName() );
-                    updateBalanceBetweenUsers(user, paidBy,splitAmount);
-
+                    System.out.println("Adding balance for user: " + user.getUserName());
+                    updateBalanceBetweenUsers(user, paidBy, splitAmount); // debtor, creditor
                 }
                 splitList.add(split);
             }
             expense.setSplits(splitList);
         }
-
     }
 
     private void updateBalanceBetweenUsers(User debtor, User creditor, Double amount) {
-        boolean balanceFound = false;
+        // Find or create the balance record for the debtor
+        Balance debtorBalance = getOrCreateBalance(debtor.getBalanceList(), creditor);
+        debtorBalance.setOwe(debtorBalance.getOwe() + amount); // Debtor owes more
 
-        // Update creditor's balance
-        List<Balance> creditorBalanceList = creditor.getBalanceList();
-        for (Balance balance : creditorBalanceList) {
-            if (balance.getUser() == debtor) {
-                balance.setBalanceAmount(balance.getBalanceAmount() + amount);
-                balanceFound = true;
-                break;
+        // Find or create the balance record for the creditor
+        Balance creditorBalance = getOrCreateBalance(creditor.getBalanceList(), debtor);
+        creditorBalance.setOwed(creditorBalance.getOwed() + amount); // Creditor is owed more
+    }
+
+    private Balance getOrCreateBalance(List<Balance> balanceList, User otherUser) {
+        for (Balance balance : balanceList) {
+            if (balance.getUser() == otherUser) {
+                return balance; // Existing balance record found
             }
         }
-        if (!balanceFound) {
-            Balance balance = new Balance(-amount, debtor);
-            creditorBalanceList.add(balance);
-        }
-
-        // Update debtor's balance (reverse entry)
-        balanceFound = false;
-        List<Balance> debtorBalanceList = debtor.getBalanceList();
-        for (Balance balance : debtorBalanceList) {
-            if (balance.getUser() == creditor) {
-                balance.setBalanceAmount(balance.getBalanceAmount() - amount);
-                balanceFound = true;
-                break;
-            }
-        }
-        if (!balanceFound) {
-            Balance balance = new Balance(-amount, creditor);
-            debtorBalanceList.add(balance);
-        }
+        // No existing balance found, create a new one
+        Balance newBalance = new Balance(otherUser);
+        balanceList.add(newBalance);
+        return newBalance;
     }
 }
