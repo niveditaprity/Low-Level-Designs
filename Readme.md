@@ -11,6 +11,51 @@
       basically its a blueprint for developers to build a robust,scalable and maintainable system.
         
 - **System Design Fundamentals**
+  
+                    The fundamentals of system design involve several core principles and components that provide a foundation for creating robust, scalable, and efficient systems. Here are the key fundamentals:
+
+      1. Scalability
+      Vertical Scaling: Adding more resources (CPU, memory) to a single server to handle increased load.
+      Horizontal Scaling: Adding more servers or instances to distribute load. This is usually more effective for handling high traffic.
+      Design systems to be scalable from the start to accommodate growth in users, data, and transactions.
+      2. Load Balancing
+      Distributes incoming traffic across multiple servers to avoid overloading a single server and improve system reliability.
+      Common methods include Round Robin (even distribution), Least Connections (least busy server), and IP Hashing (based on user IP address).
+      3. Caching
+      Caching is storing frequently accessed data temporarily in a high-speed storage layer (like memory) to speed up response times.
+      Types include Client-side caching (e.g., browser), Server-side caching (storing results on server memory), and CDN caching (using a Content Delivery Network to cache content close to users).
+      4. Database Design and Sharding
+      Normalization and Denormalization: Ensuring efficient data storage and access.
+      Indexing: Using indexes to speed up database queries.
+      Sharding: Dividing a database into smaller, faster, and more manageable pieces, often based on user ID or geography.
+      5. Data Consistency and Availability
+      Consistency: Ensuring all users see the same data at the same time.
+      Availability: Making sure the system is always up and accessible.
+      The CAP Theorem explains that in a distributed system, you can only have two of the following three: Consistency, Availability, and Partition Tolerance (the ability to continue operating despite network splits).
+      6. Microservices Architecture vs. Monolithic Architecture
+      Monolithic Architecture: The entire system is built as a single unit.
+      Microservices Architecture: The system is divided into smaller, independent services that communicate with each other, often using APIs. Microservices improve scalability, make deployment easier, and allow teams to work independently.
+      7. APIs and Communication Protocols
+      RESTful APIs: Use HTTP methods to interact with web services.
+      GraphQL: Provides a more flexible query language for APIs.
+      gRPC: A high-performance protocol, especially useful for microservices needing low-latency communication.
+      8. Security and Authentication
+      Encryption: Securing data in transit (e.g., TLS) and at rest.
+      Authentication & Authorization: Ensuring that users are who they say they are (e.g., OAuth, JWT) and have the correct permissions.
+      Rate Limiting: Preventing abuse by limiting the number of requests from a user or IP address.
+      9. Reliability and Fault Tolerance
+      Replication: Duplicating data across multiple nodes for high availability.
+      Redundancy: Having backup components so if one fails, another can take over.
+      Failover: Automatic switching to a backup server if the primary one fails.
+      10. Monitoring and Logging
+      Tracking system health and performance with monitoring tools (e.g., Prometheus, Grafana).
+      Logging to troubleshoot issues and understand user behavior (e.g., ELK Stack - Elasticsearch, Logstash, Kibana).
+      11. Event-Driven Architecture and Message Queues
+      Using events and queues (e.g., Kafka, RabbitMQ) for asynchronous processing and to decouple components.
+      Helps manage high loads, enables scalable systems, and improves reliability.
+      12. CDNs and Global Distribution
+      Content Delivery Networks (CDNs) store copies of content in multiple locations worldwide, reducing latency for users globally.
+      These fundamentals form the core concepts for designing scalable, resilient, and efficient systems. Having a strong grasp of these will help in approaching more advanced system design problems.
 - **System Design Strategies**
 - **What is Low Level Design?**
 
