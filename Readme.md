@@ -7,7 +7,8 @@
 ### Day 1: Fundamentals
 - **What is System Design?**
   
-        Its about planning how   a software application or service should be built which works Efficiently  and fullfill user's requirment. basically its a bluprint for developers to build a robust,scalable and maintainable system.
+        Its about planning how   a software application or service should be built which works Efficiently  and fullfill user's requirment.
+      basically its a blueprint for developers to build a robust,scalable and maintainable system.
         
 - **System Design Fundamentals**
 - **System Design Strategies**
