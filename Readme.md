@@ -70,7 +70,7 @@
 
 ---
 
-### Day 3: SOLID Principles
+### Day 3: SOLID Principles [Link](https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/)
 - **What are SOLID Principles?**
 - **What is Single Responsibility Principle?**
 - **Open-Closed Principle**
