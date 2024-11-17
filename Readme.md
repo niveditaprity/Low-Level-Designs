@@ -71,7 +71,14 @@
 ---
 
 ### Day 3: SOLID Principles [Link](https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/)
+        Solid principles are five principles to design a class.
 - **What are SOLID Principles?**
+
+         1. Single Responsibility Principle
+         2. Open Closed Principle
+         3. Liskov substitution principle
+         4. Interfce Segregation principle
+         5.  Dependency Inversion principle
 - **What is Single Responsibility Principle?**
 - **Open-Closed Principle**
 - **Liskov Substitution Principle**
