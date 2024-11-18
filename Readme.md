@@ -79,13 +79,17 @@
          3. Liskov substitution principle
          4. Interfce Segregation principle
          5.  Dependency Inversion principle
-- **What is Single Responsibility Principle?** [link](https://github.com/niveditaprity/Low-Level-Designs/tree/main/src/SOLID_Principle/SingleResponsibility)
+- **What is Single Responsibility Principle?** [code link](https://github.com/niveditaprity/Low-Level-Designs/tree/main/src/SOLID_Principle/SingleResponsibility)
 
          Single Responsibility Principle states that there should be only one reason to change a class. It ensures that code is modular
          easy to maintain and less prone to bugs.
 
          
-- **Open-Closed Principle**
+- **Open-Closed Principle** [code link](https://github.com/niveditaprity/Low-Level-Designs/tree/main/src/SOLID_Principle/OCP)
+
+      Open-Closed principle states that Software entities like classes, modules, or functions should be open for extension but not for modification means we can
+      add new functionality without changing the existing code.
+      it is required to avoid bugs in tested code.
 - **Liskov Substitution Principle**
 - **Interface Segregation Principle**
 - **Dependency Inversion Principle**
