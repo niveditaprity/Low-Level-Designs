@@ -96,7 +96,12 @@
 - **Interface Segregation Principle** [code link](https://github.com/niveditaprity/Low-Level-Designs/tree/main/src/SOLID_Principle/ISP)
   
        The Interface Segregation Principle (ISP) states that a class should not be forced to implement interfaces it does not use. Instead of creating large, general-purpose interfaces, it’s better to create smaller, more specific interfaces tailored to specific client needs.
-- **Dependency Inversion Principle**
+- **Dependency Inversion Principle** [Code Link](https://github.com/niveditaprity/Low-Level-Designs/tree/main/src/SOLID_Principle/DIP)
+
+       The Dependency Inversion Principle (DIP) is one of the key principles of SOLID. It states:
+      High-level modules should not depend on low-level modules. Both should depend on abstractions.
+      Abstractions should not depend on details. Details should depend on abstractions.
+      This principle promotes loose coupling between high-level (business logic) and low-level (implementation details) modules by relying on interfaces or abstract classes rather than concrete implementations.
 
 ---
 
