@@ -90,8 +90,12 @@
       Open-Closed principle states that Software entities like classes, modules, or functions should be open for extension but not for modification means we can
       add new functionality without changing the existing code.
       it is required to avoid bugs in tested code.
-- **Liskov Substitution Principle**
-- **Interface Segregation Principle**
+- **Liskov Substitution Principle** [code link](https://github.com/niveditaprity/Low-Level-Designs/tree/main/src/SOLID_Principle/LSP)
+
+      LSP states that objects of superclass can be replacable with the objects of its child class's objects
+- **Interface Segregation Principle** [code link](https://github.com/niveditaprity/Low-Level-Designs/tree/main/src/SOLID_Principle/ISP)
+  
+       The Interface Segregation Principle (ISP) states that a class should not be forced to implement interfaces it does not use. Instead of creating large, general-purpose interfaces, it’s better to create smaller, more specific interfaces tailored to specific client needs.
 - **Dependency Inversion Principle**
 
 ---
