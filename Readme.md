@@ -107,8 +107,20 @@
 
 ### Day 4: Other Principles
 - **KISS (Keep It Simple, Stupid)**
+
+       This principle emphasizes on simplicity and the solutions that are simple, easy to maintain, easy to implement, to avoid over complexity ,
+        over engineering
+         focus on 1. Simplified Architecture
+                  2. Readable Code
+                  3. Easy To Maintain,Implement
+                  4.Avoid over optimization
+                  5.User Centric
+                
 - **DRY (Don’t Repeat Yourself)**
 - **YAGNI (You Aren't Gonna Need It)**
+
+        It is a principle in software development that suggests developers should only implement features that are
+        necessary for the current requirements and not add any additional functionality that might be needed in the future.
 
 ---
 
