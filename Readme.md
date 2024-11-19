@@ -117,6 +117,9 @@
                   5.User Centric
                 
 - **DRY (Don’t Repeat Yourself)**
+
+        DRY encourages developers to write code in a way that minimizes redundancy. Instead of duplicating code,
+        developers should create reusable components, functions, or modules that can be shared and applied in multiple parts of the codebase.
 - **YAGNI (You Aren't Gonna Need It)**
 
         It is a principle in software development that suggests developers should only implement features that are
