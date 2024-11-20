@@ -133,9 +133,35 @@
 - **Inheritance in OOP**
 - **Advantages and Disadvantages of Inheritance**
 
+      Use an interface when:
+      You need to define a contract (set of methods) that multiple classes must follow, but the implementation of those methods will differ.
+      You want to achieve multiple inheritance (a class can implement multiple interfaces).
+      You want to define common behavior for unrelated classes (classes that don’t share a common superclass).
+      You need to provide default method implementations while allowing overriding.
+      You want to use polymorphism to allow different objects to be treated as the same type.
+
+      What are the advantages of inheritance?
+        Code Reusability: You can reuse existing code by inheriting from a parent class.
+        Method Overriding: You can customize the behavior of a method in the child class.
+        Polymorphism: Allows you to treat objects of different classes as objects of a common superclass, enabling flexibility in code design.
+      What is the "super" keyword in Java?
+        The super keyword is used to refer to the immediate parent class. It is used to:
+        Access parent class constructors.
+        Call parent class methods (if they are overridden).
+        Access parent class fields (if they are not private).
+      Key Concepts to Review for Inheritance Interviews:
+        Inheritance basics: extends, method overriding, method hiding, constructors.
+        Polymorphism: Method overriding and runtime polymorphism.
+        Access modifiers: private, protected, public, and inheritance visibility.
+        Abstract classes and interfaces: Differences, use cases, and when to use each.
+        Constructor chaining: Using super() and this() to call constructors.
+        Multiple inheritance: Achieved via interfaces, and how Java avoids the diamond problem.
+        Default methods in interfaces: Introduced in Java 8, how they work with inheritance.
+
+
 ---
 
-### ✅  Day 6: Polymorphism in OOP
+###  Day 6: Polymorphism in OOP
 - **Introduction to Polymorphism**
 - **Compile-Time Polymorphism**
 - **Runtime Polymorphism**
