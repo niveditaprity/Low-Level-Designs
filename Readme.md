@@ -4,7 +4,7 @@
 
 ---
 
-### Day 1: Fundamentals
+### ✅ Day 1: Fundamentals
 - **What is System Design?**
   
         Its about planning how   a software application or service should be built which works Efficiently  and fullfill user's requirment.
@@ -70,7 +70,7 @@
 
 ---
 
-### Day 3: SOLID Principles [Link](https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/)
+### ✅ Day 3: SOLID Principles [Link](https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/)
         Solid principles are five principles to design a class.
 - **What are SOLID Principles?**
 
@@ -105,7 +105,7 @@
 
 ---
 
-### Day 4: Other Principles
+### ✅ Day 4: Other Principles
 - **KISS (Keep It Simple, Stupid)**
 
        This principle emphasizes on simplicity and the solutions that are simple, easy to maintain, easy to implement, to avoid over complexity ,
@@ -127,7 +127,7 @@
 
 ---
 
-### Day 5: Object-Oriented Programming (OOP) Concepts
+### ✅ Day 5: Object-Oriented Programming (OOP) Concepts
 - **What are Classes and Objects?**
 - **Classes vs Objects**
 - **Inheritance in OOP**
@@ -135,7 +135,7 @@
 
 ---
 
-### Day 6: Polymorphism in OOP
+### ✅  Day 6: Polymorphism in OOP
 - **Introduction to Polymorphism**
 - **Compile-Time Polymorphism**
 - **Runtime Polymorphism**
