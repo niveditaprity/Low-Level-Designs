@@ -169,19 +169,43 @@
 
 ---
 
-### Day 7: Design Patterns Introduction
+### ✅ Day 7: Design Patterns Introduction
 - **What are Design Patterns?**
 - **What are Anti-Patterns?**
 
 ---
 
-### Day 8: Creational Patterns Overview
+### ✅ Day 8: Creational Patterns Overview
 - **Introduction to Creational Design Patterns**
+
+      Craetional Design patterns focus on seperating object creation logic from business logic
+      so that we can focus on only what to create than how to create an object.
+      Creational design patterns provide various object creation mechanisms,
+       which increase flexibility and reuse of existing code.
 - **Factory Pattern** – Introduction, concept, and examples.
+
+      The Factory Design Pattern is a creational design pattern that provides an interface or method to create objects in a super class,
+      but allows subclasses to alter the type of objects that will be created.
+      It abstracts the instantiation logic, making the code more flexible and easier to extend.
+      When to Use Factory Pattern:
+        When the exact type of object to be created is determined at runtime.
+        When object creation logic is complex or subject to frequent changes.
+        When you want to centralize object creation logic to ensure consistency.
+
 -  **Abstract Factory Pattern** – Introduction, concept, and examples.
+
+
+        Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
 -  **Singleton Pattern** – Definition, implementation, use cases, and examples.
 
+        The Singleton Design Pattern ensures that a class has only one instance while providing a global point of access to that instance.
+        It's commonly used to manage shared resources or global state.
 
+        Key Characteristics
+        Single Instance: Only one object of the class is created during the application's lifecycle.
+        Global Access Point: The instance is accessible globally using a static method or variable.
+        Controlled Access: The class itself controls how and when the single instance is created
+        
 ---
 
 ### Day 9: Creational Design Patterns
@@ -190,33 +214,33 @@
 
 ---
 
-### Day 10: 
----
-
-### Day 11: 
----
-
-### Day 12: 
-
----
-
-### Day 13: Structural Design Patterns Overview
+### Day 10: Structural Design Patterns Overview
 - **Introduction to Structural Design Patterns**
-
 ---
 
-### Day 14: Structural Design Patterns
+### Day 11: Structural Design Patterns
 - **Adapter Pattern** – Introduction, definition, and examples.
-
 ---
 
-### Day 15: Proxy Pattern
+### Day 12: Proxy Pattern
 - **Proxy Pattern** – Use cases, implementation, and scenarios.
 
+
 ---
 
-### Day 16: Composite Pattern
+### Day 13: Composite Pattern
 - **Composite Pattern** – Definition, working, and real-world examples.
+
+---
+
+### Day 14: 
+
+---
+
+### Day 15: 
+---
+
+### Day 16: 
 
 ---
 
