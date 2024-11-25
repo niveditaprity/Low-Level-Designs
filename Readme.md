@@ -177,17 +177,18 @@
 
 ### Day 8: Creational Patterns Overview
 - **Introduction to Creational Design Patterns**
+- **Factory Pattern** – Introduction, concept, and examples.
+-  **Abstract Factory Pattern** – Introduction, concept, and examples.
+-  **Singleton Pattern** – Definition, implementation, use cases, and examples.
+
 
 ---
 
 ### Day 9: Creational Design Patterns
-- **Factory Pattern** – Introduction, concept, and examples.
 
 ---
 
 ### Day 10: Singleton Pattern
-- **Singleton Pattern** – Definition, implementation, use cases, and examples.
-
 ---
 
 ### Day 11: Builder Pattern
