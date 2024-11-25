@@ -185,19 +185,18 @@
 ---
 
 ### Day 9: Creational Design Patterns
-
----
-
-### Day 10: Singleton Pattern
----
-
-### Day 11: Builder Pattern
 - **Builder Pattern** – What it is, how it works, and its applications.
+- **Prototype Pattern** – Concept, use cases, and implementation examples.
 
 ---
 
-### Day 12: Prototype Pattern
-- **Prototype Pattern** – Concept, use cases, and implementation examples.
+### Day 10: 
+---
+
+### Day 11: 
+---
+
+### Day 12: 
 
 ---
 
