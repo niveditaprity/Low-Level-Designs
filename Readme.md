@@ -225,6 +225,14 @@
 ### Day 12: Proxy Pattern
 - **Proxy Pattern** – Use cases, implementation, and scenarios.
 
+          Proxy design pattern is used to create a representative  object which controls access to object which is expensive,remote or in need of being secured.
+          The important point is that the client does not know about the proxy, the proxy acts as an original object for the client.
+          There are three main variations to the Proxy Pattern:
+              • A remote proxy provides a local representative for an object in a different address space.
+              • A virtual proxy creates expensive objects on demand.
+              • A protection proxy controls access to the original object. Protection proxies are useful when objects should have different access rights.
+
+
 
 ---
 
