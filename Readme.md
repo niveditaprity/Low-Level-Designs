@@ -280,6 +280,17 @@
 ### Day 22: Strategy Pattern
 - **Strategy Pattern** – Concept, how it works, and practical applications.
 
+       The Strategy Design Pattern is a behavioral design pattern that defines a family of algorithms, encapsulates each one,
+        and makes them interchangeable. It lets the algorithm vary independently from the clients that use it.
+
+        Advantages:
+          Flexibility: Allows changing the behavior of a class by changing the strategy.
+          Encapsulation: Keeps algorithms separate and promotes the Single Responsibility Principle.
+          Extensibility: Adding new strategies is straightforward.
+        Disadvantages:
+          Complexity: Adds complexity due to the creation of multiple strategy classes.
+          Context Dependency: The context must be aware of all potential strategies.
+
 ---
 
 ### Day 23: Command Pattern
