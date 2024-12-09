@@ -290,6 +290,18 @@
         Disadvantages:
           Complexity: Adds complexity due to the creation of multiple strategy classes.
           Context Dependency: The context must be aware of all potential strategies.
+  - Question: Design a Ticket Pricing System
+      You are tasked with designing a Ticket Pricing System for a travel booking platform. The system calculates ticket prices based on different pricing strategies. Each strategy           considers factors like age, travel class, and booking time.
+      
+      Requirements:
+      The base price for a ticket is fixed but can be adjusted using different pricing strategies.
+      Pricing Strategies:
+      Regular Pricing: No discount or extra charges.
+      Early Bird Pricing: Offers a 10% discount if the booking is made at least 30 days before the journey.
+      Senior Citizen Pricing: Provides a 15% discount for passengers aged 60 or above.
+      Premium Pricing: Adds a 20% surcharge for business-class travelers.
+      The system should be flexible enough to allow adding more strategies in the future.
+      You need to design the system such that the pricing strategy can be selected dynamically at runtime.
 
 ---
 
