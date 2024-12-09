@@ -277,7 +277,7 @@
 
 ---
 
-### Day 22: Strategy Pattern
+### ✅ Day 22: Strategy Pattern
 - **Strategy Pattern** – Concept, how it works, and practical applications.
 
        The Strategy Design Pattern is a behavioral design pattern that defines a family of algorithms, encapsulates each one,
