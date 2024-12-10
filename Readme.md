@@ -242,38 +242,50 @@
 ---
 
 ### Day 14: 
-
----
-
-### Day 15: 
----
-
-### Day 16: 
-
----
-
-### Day 17: Decorator Pattern
 - **Decorator Pattern** – Use cases, implementation, and examples.
 
 ---
 
-### Day 18: Facade Pattern
+### Day 15: 
 - **Facade Pattern** – Concept, how it works, and examples.
 
 ---
 
-### Day 19: Behavioral Design Patterns Overview
+### Day 16: 
 - **Introduction to Behavioral Design Patterns**
 
 ---
 
-### Day 20: Behavioral Design Patterns
+### Day 17:
 - **Chain of Responsibility Pattern** – Definition, uses, and examples.
 
 ---
 
-### Day 21: Observer Pattern
+### Day 18: 
+---
+
+### Day 19: 
+
+---
+
+### Day 20: Behavioral Design Patterns
+
+---
+
+### ✅  Day 21: Observer Pattern
 - **Observer Pattern** – Use cases, working, and implementation.
+
+        The Observer Design Pattern is a behavioral design pattern used to establish a one-to-many dependency between objects. When one object (called the subject) changes its state, all its dependent objects (called observers) are automatically notified and updated.
+
+      Key Concepts:
+      Subject: Maintains a list of observers and provides methods to add, remove, or notify them.
+      Observers: Objects that want to be notified of changes in the subject.
+      Notification Mechanism: A way for the subject to inform observers when its state changes.
+      Advantages:
+        Loose coupling between subject and observers.
+        Easy to add or remove observers dynamically.
+        Supports broadcast communication.
+
 
 ---
 
