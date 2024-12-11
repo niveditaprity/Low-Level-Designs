@@ -286,6 +286,14 @@
         It's easy to extend or modify the chain by adding or reordering handlers.
         This pattern is widely used in logging systems, event handling, and request validation.
 
+       Scenario: ATM Withdrawal
+          When a customer withdraws cash from an ATM, the machine dispenses the cash in the largest possible denominations (e.g., 2000, 500, 100 rupee notes).
+          
+          The ATM processes the withdrawal request in a chain:
+          
+          The first handler (2000 rupee note handler) checks if it can handle part of the withdrawal.
+          If there’s any remainder, it passes the request to the next handler (500 rupee note handler), and so on.
+
 ---
 
 ### Day 18: 
